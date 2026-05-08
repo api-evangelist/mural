@@ -1,0 +1,29 @@
+aid: mural
+url: https://raw.githubusercontent.com/api-evangelist/mural/refs/heads/main/apis.yml
+name: Mural
+x-type: company
+description: >-
+  Mural is a visual collaboration platform for distributed teams: whiteboards, sticky notes, frameworks, templates, and facilitation features for workshops and design sprints.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Collaboration
+  - Whiteboard
+  - Workshops
+  - Templates
+  - Enterprise
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.mural.co/
+  - type: Plans
+    url: plans/mural-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/mural-rate-limits.yml
+  - type: FinOps
+    url: finops/mural-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
