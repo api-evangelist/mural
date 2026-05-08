@@ -1,6 +1,6 @@
 # Mural (mural)
 
-Mural is a visual collaboration platform for distributed teams: whiteboards, sticky notes, frameworks, templates, and facilitation features for workshops and design sprints.
+Mural is a visual collaboration platform. It exposes both a Mural API and a Mural Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting, pagination, and a published OpenAPI specification. Postman workspace and Zapier integration are also available.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mural/refs/heads/main/apis.yml)
 
@@ -9,8 +9,12 @@ Mural is a visual collaboration platform for distributed teams: whiteboards, sti
 ## Type
 - **x-type:** company
 
-## Tags:
- - Collaboration, Whiteboard, Workshops, Templates, Enterprise
+## APIs
+- **Mural Public API** - REST at `https://app.mural.co/api/public/v1`. OAuth 2.0 with scopes; murals, widgets, rooms, workspaces, file uploads.
+- **Mural Enterprise API** - Additional admin / identity / audit endpoints for Enterprise plans.
+
+## Tags
+- Collaboration, Whiteboard, Workshops, Enterprise, OAuth
 
 ## Timestamps
 - **Created:** 2026-05-08
@@ -18,9 +22,19 @@ Mural is a visual collaboration platform for distributed teams: whiteboards, sti
 
 ## Common Properties
 - [Website](https://www.mural.co/)
-- [Plans](plans/mural-plans-pricing.yml) — placeholder, pipeline reconciles later
-- [RateLimits](rate-limits/mural-rate-limits.yml) — placeholder
-- [FinOps](finops/mural-finops.yml) — FOCUS-aligned placeholder
+- [Developer Portal](https://developers.mural.co/)
+- [API Reference](https://developers.mural.co/public/reference)
+- [Pricing](https://www.mural.co/pricing)
+- [Community](https://community.mural.co/)
+- [GitHub](https://github.com/muralco)
+- [Plans](plans/mural-plans-pricing.yml)
+- [RateLimits](rate-limits/mural-rate-limits.yml)
+- [FinOps](finops/mural-finops.yml)
+
+## Notes
+- Pricing reconciled (research): Free (3 active murals); Team+ $9.99-12/member/mo; Business $17.99/member/mo (SSO); Enterprise custom (SCIM, audit logs, data residency). Visitors view-free.
+- OpenAPI spec is referenced by Mural's developer portal but is rendered behind their SPA — not directly downloadable as a static file. Both Public and Enterprise surfaces are documented.
+- This is the **richest API** of the four whiteboard providers — published rate limits, OAuth scopes, Postman workspace, and Zapier.
 
 ## Maintainers
 **FN:** Kin Lane

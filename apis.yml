@@ -3,21 +3,73 @@ url: https://raw.githubusercontent.com/api-evangelist/mural/refs/heads/main/apis
 name: Mural
 x-type: company
 description: >-
-  Mural is a visual collaboration platform for distributed teams: whiteboards, sticky notes, frameworks, templates, and facilitation features for workshops and design sprints.
+  Mural is a visual collaboration platform. It exposes both a Mural API and a Mural
+  Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting,
+  pagination, and a published OpenAPI specification. Postman workspace and Zapier
+  integration are also available.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Collaboration
   - Whiteboard
   - Workshops
-  - Templates
   - Enterprise
+  - OAuth
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: mural:mural-public-api
+    name: Mural Public API
+    humanURL: https://developers.mural.co/public/docs
+    baseURL: https://app.mural.co/api/public/v1
+    tags:
+      - REST
+      - OAuth
+      - Murals
+      - Widgets
+      - Rooms
+      - Workspaces
+    description: >-
+      The Mural Public API supports OAuth 2.0 with scopes, image and file uploads to
+      murals, and CRUD on workspaces, rooms, murals, widgets, and members. Includes
+      published rate limits, pagination, and error-handling guidance.
+    properties:
+      - type: Documentation
+        url: https://developers.mural.co/public/docs
+      - type: APIReference
+        url: https://developers.mural.co/public/reference
+      - type: Authentication
+        url: https://developers.mural.co/public/docs
+      - type: PostmanWorkspace
+        url: https://developers.mural.co/public/docs
+      - type: Zapier
+        url: https://zapier.com/apps/mural/integrations
+  - aid: mural:mural-enterprise-api
+    name: Mural Enterprise API
+    humanURL: https://developers.mural.co/public/docs
+    baseURL: https://app.mural.co/api/enterprise/v1
+    tags:
+      - REST
+      - Enterprise
+      - SCIM-like
+      - Audit
+    description: >-
+      The Mural Enterprise API provides additional admin and management functionality
+      for Enterprise plan customers (workspace administration, audit, identity).
+    properties:
+      - type: Documentation
+        url: https://developers.mural.co/public/docs
 common:
   - type: Website
     url: https://www.mural.co/
+  - type: Portal
+    url: https://developers.mural.co/
+  - type: Pricing
+    url: https://www.mural.co/pricing
+  - type: Community
+    url: https://community.mural.co/
+  - type: GitHubOrganization
+    url: https://github.com/muralco
   - type: Plans
     url: plans/mural-plans-pricing.yml
   - type: RateLimits
