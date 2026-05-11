@@ -76,6 +76,10 @@ common:
     url: rate-limits/mural-rate-limits.yml
   - type: FinOps
     url: finops/mural-finops.yml
+  - type: Integrations
+    url: https://www.mural.co/integrations
+integrations:
+  - name: Microsoft partnership
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
