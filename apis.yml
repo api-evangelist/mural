@@ -1,7 +1,7 @@
 aid: mural
 url: https://raw.githubusercontent.com/api-evangelist/mural/refs/heads/main/apis.yml
 name: Mural
-x-type: company
+kind: company
 description: >-
   Mural is a visual collaboration platform. It exposes both a Mural API and a Mural
   Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting,
