@@ -78,6 +78,8 @@ common:
     url: finops/mural-finops.yml
   - type: Integrations
     url: https://www.mural.co/integrations
+  - type: LLMsTxt
+    url: https://developers.mural.co/llms.txt
 integrations:
   - name: Microsoft partnership
 maintainers:
