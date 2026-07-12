@@ -60,6 +60,10 @@ apis:
       - type: Documentation
         url: https://developers.mural.co/public/docs
 common:
+  - type: TrustCenter
+    url: security/mural-trust-center.yml
+  - type: DomainSecurity
+    url: security/mural-domain-security.yml
   - type: Website
     url: https://www.mural.co/
   - type: Portal
@@ -80,6 +84,8 @@ common:
     url: https://www.mural.co/integrations
   - type: LlmsText
     url: https://developers.mural.co/llms.txt
+  - url: https://www.mural.co/blog/rss.xml
+    type: Blog
 integrations:
   - name: Microsoft partnership
 maintainers:
