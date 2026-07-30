@@ -7,7 +7,19 @@ description: >-
   Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting,
   pagination, and a published OpenAPI specification. Postman workspace and Zapier
   integration are also available.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mural.png
 tags:
   - Collaboration
   - Whiteboard
