@@ -25,6 +25,12 @@ tags:
   - Whiteboard
   - Workshops
   - Enterprise
+  - Authentication
+tags_raw:
+  - Collaboration
+  - Whiteboard
+  - Workshops
+  - Enterprise
   - OAuth
 created: '2026-05-08'
 modified: '2026-05-08'
@@ -35,6 +41,13 @@ apis:
     humanURL: https://developers.mural.co/public/docs
     baseURL: https://app.mural.co/api/public/v1
     tags:
+      - REST
+      - Authentication
+      - Murals
+      - Widgets
+      - Rooms
+      - Workspaces
+    tags_raw:
       - REST
       - OAuth
       - Murals
