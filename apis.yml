@@ -7,6 +7,17 @@ description: >-
   Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting,
   pagination, and a published OpenAPI specification. Postman workspace and Zapier
   integration are also available.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
