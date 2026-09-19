@@ -57,7 +57,7 @@ apis:
       - Murals
       - Widgets
       - Rooms
-      - Workspaces
+      - Workspace
     tags_raw:
       - REST
       - OAuth
