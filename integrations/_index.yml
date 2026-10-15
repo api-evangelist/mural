@@ -83,7 +83,7 @@
     app_slug: mural
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: mural-pipedream
   label: Pipedream
@@ -109,7 +109,7 @@
     actions: true
     sources: true
     builder: Pipedream repo (component)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: mural-fedramp
   label: FedRAMP
