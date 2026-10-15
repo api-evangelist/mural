@@ -15,25 +15,6 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
-- slug: mural-mcp-registry
-  label: MCP Registry
-  partner: mcp
-  partner_name: MCP Registry
-  type: register
-  channel: standard-directory
-  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=co.mural
-  source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: registry.modelcontextprotocol.io
-    spec_file: null
-    role: mcp-server-listing
-    registered_name: co.mural/mural
-    register_id: co.mural/mural
-    detected_by: sweep-agent-tools.py
-    detected: '2026-10-14'
-  status: not-a-workflow
-  arazzo: null
 - slug: mural-okta-own
   label: Okta (own)
   partner: okta
@@ -58,5 +39,109 @@
   evidence: https://splunkbase.splunk.com/app/7521/
   source: edge
   relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: mural-mcp-registry
+  label: MCP Registry
+  partner: mcp
+  partner_name: MCP Registry
+  type: register
+  channel: standard-directory
+  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=co.mural
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: registry.modelcontextprotocol.io
+    spec_file: null
+    role: mcp-server-listing
+    registered_name: co.mural/mural
+    register_id: co.mural/mural
+    detected_by: sweep-agent-tools.py
+    detected: '2026-10-15'
+  status: not-a-workflow
+  arazzo: null
+- slug: mural-zapier
+  label: Zapier
+  partner: zapier
+  partner_name: Zapier
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  evidence: https://zapier.com/apps/mural/integrations
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Mural
+    matched_domain: mural.co
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: mural
+    beta: false
+    builder: unknown (not in the directory record)
+  status: pending-partner-spec
+  arazzo: null
+- slug: mural-pipedream
+  label: Pipedream
+  partner: pipedream
+  partner_name: Pipedream
+  type: marketplace
+  marketplace: pipedream-components
+  channel: open-source-node
+  evidence: https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/mural
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Pipedream components (PipedreamHQ/pipedream components/)
+    spec_file: null
+    role: ipaas-connector:pipedream
+    registered_name: mural
+    matched_domain: mural.co
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: mural
+    actions: true
+    sources: true
+    builder: Pipedream repo (component)
+  status: pending-partner-spec
+  arazzo: null
+- slug: mural-fedramp
+  label: FedRAMP
+  partner_name: FedRAMP
+  category: FedRAMP In Process
+  type: contract
+  channel: regulator-register
+  evidence: https://marketplace.fedramp.gov/products/FR2229720196
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: FedRAMP Marketplace data (github.com/18F/fedramp-data data/data.json @4b73d9247f)
+    standard: FedRAMP
+    spec_file: null
+    role: fedramp-in-process
+    registered_name: Mural Tactivos Inc., DBA Mural
+    register_id: FR2229720196
+    matched_domain: mural.co
+    matched_by: domain
+    domain_source: website
+    designations:
+    - In Process
+    packages:
+    - Mural for Government
+    service_models:
+    - SaaS
+    paths:
+    - Agency
+    signal_note: certified_products = one entry per AUTHORIZED impact level, never per package; packages, service
+      models, paths and leveraging agencies are context, never counted. The register lists current designations
+      only (revoked / expired are removed), so lapsed is always false
+    detected_by: sweep-gov-cloud.py
+    detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
