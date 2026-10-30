@@ -1,4 +1,4 @@
-# Mural (mural)
+# Mural
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,41 +66,104 @@
 
 Mural is a visual collaboration platform. It exposes both a Mural API and a Mural Enterprise API with OAuth 2.0 authentication, scope-based permissions, rate limiting, pagination, and a published OpenAPI specification. Postman workspace and Zapier integration are also available.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/mural/refs/heads/main/apis.yml)
+**Areas:** Collaboration · Whiteboard · Workshops · Enterprise · Authentication
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=mural-api-evangelist&utm_content=repo)
+## Mural on APIs.io
 
-## Type
-- **x-type:** company
+Everything profiled for Mural is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mural/](https://apis.io/providers/mural/)** — or go straight to one of the APIs or properties below.
 
-## APIs
-- **Mural Public API** - REST at `https://app.mural.co/api/public/v1`. OAuth 2.0 with scopes; murals, widgets, rooms, workspaces, file uploads.
-- **Mural Enterprise API** - Additional admin / identity / audit endpoints for Enterprise plans.
+### APIs (2)
 
-## Tags
-- Collaboration, Whiteboard, Workshops, Enterprise, OAuth
+- [Mural Public API](https://apis.io/apis/mural/mural-public-api/) — The Mural Public API supports OAuth 2.0 with scopes, image and file uploads to murals, and CRUD on workspaces, rooms, murals, widgets, and members. Includes…
+- [Mural Enterprise API](https://apis.io/apis/mural/mural-enterprise-api/) — The Mural Enterprise API provides additional admin and management functionality for Enterprise plan customers (workspace administration, audit, identity).
 
-## Timestamps
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mural Domain Security](https://apis.io/security/mural/mural-domain-security/)
+- [Mural Trust Center](https://apis.io/security/mural/mural-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Mural Plans Pricing](https://apis.io/plans/mural/mural-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Mural Rate Limits](https://apis.io/rate-limits/mural/mural-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Mural Finops](https://apis.io/finops/mural/mural-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.mural.co/)
-- [Developer Portal](https://developers.mural.co/)
-- [API Reference](https://developers.mural.co/public/reference)
 - [Pricing](https://www.mural.co/pricing)
-- [Community](https://community.mural.co/)
+- [Blog](https://www.mural.co/blog/rss.xml)
 - [GitHub](https://github.com/muralco)
-- [Plans](plans/mural-plans-pricing.yml)
-- [RateLimits](rate-limits/mural-rate-limits.yml)
-- [FinOps](finops/mural-finops.yml)
 
-## Notes
-- Pricing reconciled (research): Free (3 active murals); Team+ $9.99-12/member/mo; Business $17.99/member/mo (SSO); Enterprise custom (SCIM, audit logs, data residency). Visitors view-free.
-- OpenAPI spec is referenced by Mural's developer portal but is rendered behind their SPA — not directly downloadable as a static file. Both Public and Enterprise surfaces are documented.
-- This is the **richest API** of the four whiteboard providers — published rate limits, OAuth scopes, Postman workspace, and Zapier.
+## API Evangelist rating
 
-## Maintainers
-**FN:** Kin Lane
+**Kin Score 17.1** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 23.7 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mural/](https://apis.io/providers/mural/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mural: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mural/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
